@@ -1,11 +1,21 @@
+:root {
+  --border-grey: #e5e7eb;
+  --main-grey: #f9fafb;
+  --main-green: #0e9f6e;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+input:focus {
+  outline: none;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
 }

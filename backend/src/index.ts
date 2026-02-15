@@ -19,4 +19,19 @@ app.get("/products", async (req, res) => {
   }
 });
 
+app.post("/add-product", async (req, res) => {
+  const { title, description } = req.body;
+  try {
+    await pool.query(
+      `INSERT INTO products (title, description)
+      VALUES ($1, $2);
+      `,
+      [title, description],
+    );
+  } catch (err) {
+    console.log("Error:", err);
+    res.status(500).json({ message: "error", result: err });
+  }
+});
+
 export default app;

@@ -1,0 +1,27 @@
+.count {
+  display: flex;
+}
+
+.count_wrap {
+  border-radius: 16px;
+  border: 1px var(--border-grey) solid;
+  background-color: var(--main-grey);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.count_input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  width: 100px;
+}
+
+.count_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
