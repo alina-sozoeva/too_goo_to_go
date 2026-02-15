@@ -1,5 +1,12 @@
-export interface IProducts {
+export interface IProduct {
   id: string;
-  name: string;
-  count: number;
+  title: string;
+  description: string;
+  create_at: Date;
+  quantity: number;
+}
+
+export interface IProducts {
+  message: string;
+  result: IProduct[];
 }

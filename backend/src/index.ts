@@ -1,5 +1,6 @@
 import express from "express";
 import { pool } from "./db";
+import cors from "cors";
 
 const app = express();
 
@@ -8,6 +9,12 @@ app.use(express.json());
 app.get("/health", (req, res) => {
   res.send({ status: "done" });
 });
+
+app.use(
+  cors({
+    origin: "*",
+  }),
+);
 
 app.get("/products", async (req, res) => {
   try {

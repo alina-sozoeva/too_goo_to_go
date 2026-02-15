@@ -37,6 +37,7 @@
   width: 250px;
   padding: 16px 12px;
   background-color: white;
+  border-right: 1px var(--border-grey) solid;
 
   .nav_item {
     transition: 0.5s;
